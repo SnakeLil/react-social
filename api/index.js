@@ -5,6 +5,7 @@ import likeRoutes from './routes/likes.js'
 import commentRoutes from './routes/comments.js'
 import relationshipRoutes from './routes/relationship.js'
 import authRoutes from './routes/auth.js'
+import chatRoutes from './routes/chat.js'
 import recRoutes from './routes/rec.js'
 import cors from 'cors'
 import cookieParser from "cookie-parser";
@@ -35,6 +36,8 @@ app.use('/api/auth',authRoutes)
 app.use('/api/relationships',relationshipRoutes)
 
 app.use('/api/comments',commentRoutes)
+
+app.use('/api/chat',chatRoutes)
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
