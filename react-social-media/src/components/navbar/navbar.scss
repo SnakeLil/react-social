@@ -1,0 +1,93 @@
+@import '../../style.scss';
+.navbar {
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    padding: 0 20px;
+    border-bottom: 1px solid #d6d5d5;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    @include mobile {
+        height: 80px;
+        
+    }
+    .icon {
+        cursor: pointer;
+    }
+    .left {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        .gohome {
+            @include mobile {
+                display: none;
+                
+            }
+        }
+        a {
+            text-decoration: none;
+            color: #959494;
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .search {
+            display: flex;
+            align-items: center;
+            border: 1px solid #dadada;
+            height: 30px;
+            border-radius: 5px;
+            input {
+                width: 400px;
+                height: 20px;
+                border: none;
+                outline: none;
+                padding-left: 10px;
+            }
+            @include mobile {
+                display: none;
+            }
+        }
+    }
+    .right {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        .personicon {
+            @include mobile {
+                display: none;
+            }
+        }
+        .user {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            @include tablet {
+                display: none;
+                
+            }
+            img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                cursor: pointer;
+                object-fit: cover;
+            }
+            span {
+                cursor: pointer;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                @include mobile {
+                    display: none;
+                }
+            }
+        }
+    }
+}

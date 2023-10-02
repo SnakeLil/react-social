@@ -1,0 +1,19 @@
+@import '../../style.scss';
+.profile {
+
+    flex: 6;
+    padding: 20px 50px 20px 70px;
+    overflow: hidden;
+    @include mobile {
+        padding: 20px 10px;
+    }
+    .cover {
+        width: calc(100% + 120px);
+        height: 250px;
+        object-fit: cover;
+        margin: -20px 0px 0px -70px;
+        @include mobile {
+            
+        }
+    }
+}

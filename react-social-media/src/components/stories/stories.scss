@@ -1,0 +1,50 @@
+@import '../../style.scss';
+.stories {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 220px;
+    gap: 12px;
+    @include mobile {
+        display: none;
+        
+    }
+    .story {
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        flex: 1;
+        height: 220px;
+        cursor: pointer;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        span {
+            z-index: 2;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            font-size: 13px;
+        }
+        .addpost {
+            position: absolute;
+            bottom: 30px;
+            left: 10px;
+            width: 28px;
+            height: 28px;
+            background-color: #3498db;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 18px;
+            color: #ecf0f1;
+            border: none;
+
+        }
+    }
+}

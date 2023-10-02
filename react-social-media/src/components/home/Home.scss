@@ -1,0 +1,17 @@
+@import '../../style.scss';
+.home {
+    background-color: rgb(245, 243, 243);
+    min-height: 100vh;
+
+    .main {
+        display: flex;
+        .middle {
+            flex: 6;
+            padding: 20px 50px 20px 70px;
+            @include mobile {
+                padding:20px 10px;
+            }
+            
+        }
+    }
+}

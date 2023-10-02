@@ -1,0 +1,99 @@
+@import '../../style.scss';
+.personal {
+    position: relative;
+    background-color: white;
+    margin-top: 10px;
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    padding: 80px 50px 40px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    -webkit-box-shadow: -1px 1px 7px 0px rgba(128,125,128,1);
+    -moz-box-shadow: -1px 1px 7px 0px rgba(128,125,128,1);
+    box-shadow: -1px 1px 7px 0px rgb(219, 219, 219);
+
+    h3 {
+        align-self: center;
+    }
+    .icons {
+        border-bottom: none;
+
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+       a {
+        color: black;
+       }
+        .itemS {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            flex-wrap: wrap;
+            @include mobile {
+                display: none;
+            }
+        }
+        .itemM {
+            margin-right: 90px;
+            display: flex;
+            align-items: center;
+            gap: 100px;
+            justify-content: space-between;
+            @include mobile {
+                gap: 30px;
+            }
+            span {
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                gap: 5px;
+                color: gray;
+                .icon {
+                    color: black;
+                }
+            }
+        }
+        .itemE {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            .icon {
+                cursor: pointer;
+            }
+        }
+    }
+    button {
+        
+        width: 80px;
+        height: 30px;
+        background-color: rgb(90, 115, 244);
+        color: white;
+        font-weight: 550;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        cursor: pointer;
+        border: none;
+        border-radius: 3px;
+        font-size: 10px;
+    }
+    button:hover {
+        background-color: rgb(110, 132, 241);
+    }
+    
+    .personPic {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}

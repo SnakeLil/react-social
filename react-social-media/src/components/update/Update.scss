@@ -1,0 +1,62 @@
+.update {
+
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50vw;
+    height: 50vh;
+    background-color: white;
+    padding: 50px;
+    border: 1px solid rgb(209, 206, 206);
+    border-radius: 10px;
+    .updateForm {
+        
+        display: flex;
+        gap: 25px;
+        flex-direction: column;
+        justify-content: center;
+        .item {
+            display: flex;
+            align-items: center;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        input{
+            width: 80%;
+            height: 40px;
+            border-radius: 5px;
+            border: 1px solid rgb(209, 206, 206);
+            outline: none;
+        }
+        input[type = 'file'] {
+            border:none
+        }
+        span {
+            display: inline-block;
+            
+            height: 40px;
+            width: 80px;
+        }
+        button {
+            width: 100px;
+            height: fit-content;
+            padding: 10px;
+        }
+    }
+    .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        color: gray;
+        font-size: 30px;
+        font-weight: bold;
+    }
+}

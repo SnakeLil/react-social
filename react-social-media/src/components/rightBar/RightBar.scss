@@ -1,0 +1,134 @@
+@import '../../style.scss';
+.rightbar {
+    background-color: rgb(245, 243, 243);
+    flex: 3;
+    height: calc(100vh - 70px);
+    padding: 20px;
+    position: sticky;
+    top: 70px;
+    overflow: scroll;
+    border-radius: 0 5px 5px 0;
+    font-size: 13px;
+    @include mobile {
+        display: none;
+    }
+    @include tablet {
+        display: none;
+    }
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .container {
+        background-color: rgb(245, 243, 243);
+        display: flex;
+        border-radius: 5px;
+        flex-direction: column;
+        gap: 20px;
+
+        .item {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border-radius: 5px;
+            padding: 15px;
+            -webkit-box-shadow: -2px 4px 11px 1px rgba(214, 211, 214, 1);
+            -moz-box-shadow: -2px 4px 11px 1px rgba(214, 211, 214, 1);
+            box-shadow: -2px 4px 11px 1px rgba(214, 211, 214, 1);
+
+            .title {
+                color: rgb(91, 91, 91);
+            }
+
+            .user {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                overflow: hidden;
+                .info {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    position: relative;
+
+                    img {
+                        width: 28px;
+                        height: 28px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        object-fit: cover;
+                    }
+
+                    span {
+                        font-size: 14px;
+                        color: rgb(115, 115, 115);
+                        cursor: pointer;
+                    }
+
+                    .status {
+                        font-size: 10px;
+                        color: gray;
+                        max-width: 20ch;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                    }
+
+                    .online {
+                        z-index: 2;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background-color: #2ecc71;
+                        position: absolute;
+                        top: -1px;
+                        left: 19px;
+
+                    }
+                }
+
+                .btns {
+                    display: flex;
+                    align-items: center;
+
+                    gap: 10px;
+
+                    span {
+                        color: gray;
+                    }
+
+                    button {
+                        width: 50px;
+                        height: 25px;
+                        background-color: rgb(90, 115, 244);
+                        color: white;
+                        font-weight: 550;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        border: none;
+                        border-radius: 3px;
+                        font-size: 10px;
+                    }
+
+                    .mis {
+                        background-color: rgb(240, 85, 85);
+                    }
+                }
+            }
+            .refresh {
+                position: absolute;
+                top: 28px;
+                right: 28px;
+                cursor: pointer;
+                
+            }
+            .refresh:active {
+                transform: scale(0.9);
+            }
+        }
+    }
+}

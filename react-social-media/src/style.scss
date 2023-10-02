@@ -1,0 +1,258 @@
+.App {
+    .theme-dark {
+        .navbar {
+            background-color: rgb(34, 34, 34);
+            color: white;
+            border-color: #313131;
+        }
+        .search {
+            border-color: #313131;
+        }
+        input {
+            background-color: rgb(34, 34, 34);
+            caret-color: white;
+            color: white;
+        }
+
+        .home {
+            background-color: rgb(51, 51, 51);
+            color: rgb(238, 238, 238);
+            .leftbar {
+                background-color: rgb(34, 34, 34);
+                color: white;
+                .menu{
+                    border-color: #535353;
+                }
+                .item:hover {
+                    background-color: #535353;
+                }
+
+                .user:hover {
+                    background-color: #535353;
+                }
+            }
+
+            .rightbar {
+                background-color: rgb(51, 51, 51);
+                color: white;
+
+                .container {
+                    background-color: rgb(51, 51, 51);
+
+                    .item {
+                        background-color: rgb(34, 34, 34);
+                        color: white;
+                        -webkit-box-shadow: -2px 4px 11px 1px rgba(214, 211, 214, 1);
+                        -moz-box-shadow: -2px 4px 11px 1px rgba(214, 211, 214, 1);
+                        box-shadow: -2px 4px 11px 1px rgb(37, 36, 37);
+                        .title {
+                            color: white;
+
+                        }
+                        span {
+                            color: white;
+                        }
+                        .status {
+                            color: white;
+                        }
+                        .btns {
+                            .fol {
+                                background-color: #313131;
+                            }
+                            .mis {
+                                background-color: #dcdddd;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+            .middle {
+
+                .stories {
+
+                    .addpost {
+                        background-color: #95a5a6;
+                    }
+                }
+                .posts {
+
+                    .post {
+                        background-color: rgb(34, 34, 34);
+                        -webkit-box-shadow: -1px 1px 7px 0px rgba(128,125,128,1);
+                        -moz-box-shadow: -1px 1px 7px 0px rgba(128,125,128,1);
+                        box-shadow: -1px 1px 7px 0px rgb(28, 28, 28);
+                        .btm {
+                            span {
+                                color: white;
+                            }
+                        }
+                        .userinfo {
+                            .user {
+                                a {
+                                    text-decoration: none;
+                                    .uname {
+                                        color: rgb(255, 255, 255);
+                                    }
+                                }
+                            }
+                        }
+                        .write {
+                            input {
+                                border: 1px solid #313131;
+                            }
+                            button {
+                                background-color: white;
+                                color: black;
+                            }
+                        }
+
+                    }
+                    .text {
+                        background-color: rgb(34, 34, 34);
+                        -webkit-box-shadow: -1px 1px 7px 0px rgba(128,125,128,1);
+                        -moz-box-shadow: -1px 1px 7px 0px rgba(128,125,128,1);
+                        box-shadow: -1px 1px 7px 0px rgb(28, 28, 28);
+                        .btm {
+                            span {
+                                color: white;
+                            }
+                        }
+                        .userinfo {
+                            .user {
+                                a {
+                                    text-decoration: none;
+                                    .uname {
+                                        color: rgb(255, 255, 255);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .uinfo{
+                        .info {
+                            p{
+                                color: white;
+                            }
+                            a {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+                .addPost {
+                    background-color: rgb(34, 34, 34);
+                    .addtop{
+
+                    }
+                    button {
+                        background-color: #dcdddd;
+                        color: black;
+                        font-weight: bold;
+                    }
+                    button:hover{
+                        background-color: #535353;
+                    }
+                }
+
+            }
+            
+                .main {
+                    .profile {
+                        .personal {
+                            background-color: rgb(34, 34, 34);
+                            color: white;
+                            background-color: rgb(34, 34, 34);
+                        -webkit-box-shadow: -1px 1px 7px 0px rgba(128,125,128,1);
+                        -moz-box-shadow: -1px 1px 7px 0px rgba(128,125,128,1);
+                        box-shadow: -1px 1px 7px 0px rgb(28, 28, 28);
+                        a {
+                            color: white;
+                        }
+                        .itemM {
+                            .icon {
+                                color: white;
+                            }
+                            span {
+                                color: white;
+                            }
+                        }
+                        button {
+                            background-color: #313131;
+                            color: white;
+                        }
+                        button:hover {
+                            background-color: #535353;
+                        }
+                        }
+                        .posts {
+                            .post,.text {
+                                background-color: rgb(34, 34, 34);
+                            color: white;
+                            background-color: rgb(34, 34, 34);
+                        -webkit-box-shadow: -1px 1px 7px 0px rgba(128,125,128,1);
+                        -moz-box-shadow: -1px 1px 7px 0px rgba(128,125,128,1);
+                        box-shadow: -1px 1px 7px 0px rgb(28, 28, 28);
+                        .btm {
+                            span {
+                                color: white;
+                            }
+                        }
+                        .userinfo {
+                            .user {
+                                a {
+                                    text-decoration: none;
+                                    .uname {
+                                        color: rgb(255, 255, 255);
+                                    }
+                                }
+                            }
+                        }
+                            }
+                        }
+                    }
+                }
+            .footer {
+                background-color: rgb(34, 34, 34);
+                .Maddpost {
+                    background-color: #313131;
+                }
+            }
+        }
+        .moreList {
+            background-color: #313131;
+            border: none;
+            color: white;
+            button{
+                background-color: #313131;
+            }
+            span:hover {
+                background-color: #535353;
+            }
+        }
+        .update {
+            background-color: #313131;
+            border: none;
+        }
+    }
+
+    .theme-light {
+
+        .navbar {}
+    }
+}
+@mixin mobile {
+    @media  (max-width: 850px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: 850px) and (max-width: 1150px) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: 1150px) {
+        @content;
+    }
+}

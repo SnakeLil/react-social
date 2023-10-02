@@ -1,0 +1,30 @@
+@import '../../style.scss';
+.footer {
+    width: 100%;
+    min-height: 45px;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: sticky;
+    display: none;
+    bottom: 0;
+    background-color: rgb(255, 255, 255,.98);
+    justify-content: center;
+    align-items: center;
+    .Maddpost {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #718093;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        
+        color: white;
+
+    }
+    @include mobile {
+        display: flex;
+        
+    }
+}
